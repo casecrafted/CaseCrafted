@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - CaseCrafted</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="CaseCrafted Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About</a></li>
+                <li><a href="{{ '/products' | relative_url }}">Products</a></li>
+                <li><a href="{{ '/services' | relative_url }}">Services</a></li>
+                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
