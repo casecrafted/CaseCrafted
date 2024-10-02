@@ -117,6 +117,19 @@ button:hover, .btn:hover {
 
 /* Section-Specific Styling */
 
+/* Hero Section */
+.hero {
+    background-color: #f15a29;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* More Than Protection Section */
+.more-than-protection, .craft-meets-purpose {
+    padding: 40px 20px;
+}
+
 /* About Section */
 .about-section {
     background-color: #f1f1f1;
@@ -305,4 +318,3 @@ hr {
     background-color: #f15a29;
     border-radius: 10px;
 }
-
