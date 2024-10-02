@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
-    {% include header.html %}  <!-- Includes the header navigation -->
+
+    <!-- Include the header -->
+    {% include header.html %}
+
+    <!-- Main content section -->
     <main>
         {{ content }}
     </main>
-    {% include footer.html %}  <!-- Includes the footer -->
+
+    <!-- Include the footer -->
+    {% include footer.html %}
+
 </body>
 </html>
