@@ -1,30 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-</head>
-<body>
-    {% include header.html %}
+---
+layout: default
+title: "Welcome to CaseCrafted"
+---
 
-    <main>
-        <section class="hero">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.description }}</p>
-        </section>
+<section class="hero">
+    <h1>Your Phone, Your Style, Crafted to Perfection</h1>
+    <p>
+        At CaseCrafted, we get it—your phone is more than just a device. It's a lifeline, a creative hub, and an extension of who you are. 
+        That’s why we don’t just make phone cases. We craft them. Each one is designed with purpose, built with precision, and inspired 
+        by the way you live, work, and express yourself.
+    </p>
+</section>
 
-        <section class="content">
-            {{ content | markdownify }}
-        </section>
-
-        <section class="call-to-action">
-            <h2>Discover Our Unique Cases</h2>
-            <a href="{{ '/products' | relative_url }}" class="btn">Shop Now</a>
-        </section>
-    </main>
-
-    {% include footer.html %}
-</body>
-</html>
+<section class="features">
+    <h2>More Than Protection</h2>
+    <p>
+        Our cases do more than protect—they reflect. Whether you’re chasing the next adventure, hustling through the city, or chilling with 
+        friends, we’ve got a case that keeps up with your life. Strong enough to handle whatever comes your way, yet sleek enough to stand out.
+    </p>
+    <h2>Craft Meets Purpose</h2>
+    <p>
+        Every detail of a CaseCrafted case is designed with you in mind. We blend premium materials, innovative engineering, and fresh designs to 
+        create something that’s more than just a cover—it’s a personal statement.
+    </p>
+</section>
