@@ -9,14 +9,14 @@ title: Products
     </div>
     <nav>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/products.html">Products</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/about.html">About</a></li>
-        </ul>
-        <div class="cart">
-            <span>Cart: <span id="cart-count">0</span></span>
-        </div>
+        <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/products.html' | relative_url }}">Products</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+    </ul>
+    <div class="cart">
+        <span>Cart: <span id="cart-count">0</span></span>
+    </div>
     </nav>
 </header>
 
