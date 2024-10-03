@@ -1,3 +1,60 @@
+# Site settings
 title: CaseCrafted
-description: Your Phone, Your Style, Crafted to Perfection.
-url: "https://username.github.io/casecrafted"  # Replace with your actual GitHub username
+description: "Showcase stylish and functional phone cases designed to reflect individuality."
+url: "https://casecrafted.github.io/CaseCrafted" # Update this to your GitHub Pages URL.
+baseurl: "" # Adjust if deploying to a subdirectory
+author: "Mohamed Besey"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social media links
+social:
+  twitter: "https://twitter.com/CaseCrafted" # Replace with actual links
+  facebook: "https://facebook.com/CaseCrafted"
+  instagram: "https://instagram.com/CaseCrafted"
+  github: "https://github.com/CaseCrafted"
+
+# Custom variables for the project
+custom_variables:
+  default_price: "$29.99" # Default product price for phone cases
+  contact_email: "casecraftedshop@gmail.com" # Replace with your actual support email
+  primary_colors: 
+    - orange
+    - green
+    - black
+    - yellow
+  rating_star_colors:
+    - orange
+    - green
+    - black
+    - yellow
+
+# Exclude files and directories from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+
+# Deployment
+theme: minima
+paginate: 5
+
+# SEO settings
+seo:
+  title: "Phone cases that reflect individuality - CaseCrafted"
+  description: "Explore CaseCrafted's collection of custom, stylish phone cases."
+  twitter_username: "@CaseCrafted"
+
+# Feed settings
+feed:
+  path: feed.xml
+  limit: 10
