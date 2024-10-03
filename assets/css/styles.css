@@ -341,3 +341,58 @@ hr {
     background-color: #f15a29;
     border-radius: 10px;
 }
+/* -- Custom Background for Specific Text Block -- */
+.about-section .custom-text-block {
+    background-color: #f15a29; /* Use CaseCrafted's main brand color for consistency */
+    color: white; /* Contrast the text against the background */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center it within its container */
+    max-width: 900px; /* Keep it consistent with the site's content width */
+}
+
+/* Ensure images dynamically loaded into the product section are handled properly */
+.products-section img {
+    width: 100%; /* Make sure images always scale to the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures consistent image display */
+    border-radius: 10px;
+}
+
+/* Update for Responsive Design */
+@media (max-width: 768px) {
+    .about-section .custom-text-block {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+    
+    .products-section img {
+        object-fit: contain; /* In smaller screens, allow images to contain within the view */
+    }
+}
+
+/* Additional Media Query Enhancements */
+@media (max-width: 576px) {
+    .product-card {
+        flex: 1 1 100%; /* Make the product cards take full width on smaller screens */
+        margin: 10px 0; /* Adjust margin to maintain spacing */
+    }
+
+    .product-card h3 {
+        font-size: 1.2em; /* Reduce the size of product titles */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start; /* Align nav items to the left for easier tapping */
+    }
+
+    .logo img {
+        max-width: 80px; /* Smaller logo size for mobile */
+    }
+}
+
