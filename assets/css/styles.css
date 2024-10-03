@@ -401,5 +401,39 @@ hr {
     color: #f15a29;
     margin-left: 20px;
 }
+/* Add to Cart Button */
+.add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f15a29; /* Orange */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e66a2b; /* Slightly darker orange for hover */
+}
+
+/* Rating Stars */
+.rating {
+    color: #f15a29; /* Orange */
+}
+
+.rating.green {
+    color: green;
+}
+
+.rating.black {
+    color: black;
+}
+
+.rating.yellow {
+    color: yellow;
+}
 
 
