@@ -435,5 +435,43 @@ hr {
 .rating.yellow {
     color: yellow;
 }
+/* Color Palette */
+body, h1, h2, h3, p, .price {
+    color: #333; /* Default text color */
+}
+
+/* Orange Text for Headers and Buttons */
+h1 {
+    color: #f15a29; /* Use orange for main headings */
+}
+
+h2 {
+    color: #f15a29; /* Use orange for secondary headings */
+}
+
+.price {
+    color: #f15a29; /* Price in orange */
+}
+
+.star {
+    color: orange; /* Star color */
+}
+
+/* Adjusted Button Styles */
+button, .btn {
+    background-color: #f15a29; /* Button color */
+    color: white; /* Text color for buttons */
+}
+
+/* Ensure links are in specified colors */
+a {
+    color: #f15a29; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 
 
