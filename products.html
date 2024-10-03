@@ -10,9 +10,9 @@ title: Products
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/products" class="active">Products</a></li> <!-- Added class for active state -->
-            <li><a href="/about">About</a></li> <!-- Ensure About link is here -->
+            <li><a href="/products">Products</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
         </ul>
         <div class="cart">
             <span>Cart: <span id="cart-count">0</span></span>
@@ -30,8 +30,15 @@ title: Products
                 <img src="{{ image.path | relative_url }}" alt="{{ image.basename | capitalize }} Image">
                 <h3>{{ image.basename | capitalize }}</h3>
                 <p class="price">$29.99</p>
+                <div class="star-rating">
+                    <span class="star" style="color: orange;">★</span>
+                    <span class="star" style="color: orange;">★</span>
+                    <span class="star" style="color: orange;">★</span>
+                    <span class="star" style="color: orange;">★</span>
+                    <span class="star" style="color: orange;">★</span>
+                </div>
                 <!-- Add to Cart Button -->
-                <button class="add-to-cart" onclick="addToCart('{{ image.basename | capitalize }}')">Add to Cart</button>
+                <button class="btn" onclick="addToCart('{{ image.basename | capitalize }}')">Add to Cart</button>
             </div>
             {% endif %}
         {% endfor %}
@@ -39,13 +46,3 @@ title: Products
 </main>
 
 <script src="{{ '/assets/js/cart.js' | relative_url }}"></script>
-<script>
-    // Function to add item to cart and update cart count
-    let cartCount = 0;
-
-    function addToCart(productName) {
-        cartCount++;
-        document.getElementById('cart-count').innerText = cartCount; // Update cart count
-        alert(productName + ' has been added to your cart!'); // Optional alert for user feedback
-    }
-</script>
