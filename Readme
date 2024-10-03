@@ -1,1 +1,119 @@
-This is the readme page
+# CaseCrafted
+
+Welcome to **CaseCrafted**! Your phone, your style, crafted to perfection. This repository contains the source code for the **CaseCrafted** website, showcasing a collection of stylish, functional, and customizable phone cases that reflect individuality.
+
+## Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+At **CaseCrafted**, we believe that a phone is more than just a device. It’s an extension of who you are. Our mission is to design and craft phone cases that reflect your personal identity and provide reliable protection with a unique style. 
+
+This website is built to showcase our products and allow users to learn more about what we offer.
+
+## Features
+
+- **Customizable Phone Cases**: Display a collection of customizable and stylish phone cases.
+- **Responsive Design**: The website is fully responsive and works across all devices.
+- **Dynamic Products Page**: Products are dynamically loaded from the assets folder (excluding the logo).
+- **Simple and Modern Design**: Easy to navigate and visually appealing design.
+
+## Demo
+
+You can view the live version of the site here: [CaseCrafted GitHub Pages](https://your-github-username.github.io/casecrafted/)
+
+## Installation
+
+To set up this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-github-username/casecrafted.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd casecrafted
+Install Jekyll:
+
+If you don't already have Jekyll installed, follow the Jekyll installation guide for your system.
+
+Run the local development server:
+
+bash
+Copy code
+bundle exec jekyll serve
+Open the project:
+
+Once the server is running, open a web browser and go to:
+
+bash
+Copy code
+http://localhost:4000/casecrafted/
+Usage
+This website uses Jekyll and GitHub Pages for static site generation and hosting. Below are some key usage instructions:
+
+How to Add New Products
+Add product images to the assets/images folder.
+Exclude logo.png from the images folder (this is done automatically in the code).
+The products page will dynamically display all images except for logo.png.
+Folder Structure
+The project follows a well-structured hierarchy:
+
+bash
+Copy code
+casecrafted/
+├── _config.yml               # Jekyll configuration file
+├── _posts/                   # Blog posts (if applicable)
+├── _layouts/                 # HTML layouts for pages
+│   ├── default.html          # Default layout for all pages
+│   ├── home.html             # Layout for the home page
+├── _includes/                # Reusable HTML components
+│   ├── header.html           # Header section
+│   ├── footer.html           # Footer section
+├── assets/
+│   ├── css/
+│   │   └── styles.css        # Main stylesheet for the site
+│   └── images/               # Images for products and logos
+├── index.html                # Home page
+├── about.html                # About page
+├── products.html             # Products page
+├── contact.html              # Contact page
+├── README.md                 # Project documentation (this file)
+└── CNAME                     # Custom domain configuration (optional)
+Technologies Used
+Jekyll: Static site generator used for building the site.
+GitHub Pages: Hosting platform for the site.
+HTML/CSS: For structuring and styling the website.
+Liquid: Templating engine used within Jekyll for dynamic content generation.
+Contributing
+We welcome contributions! Here's how you can help:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -am 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Open a pull request.
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+vbnet
+Copy code
+
+### Explanation:
+- **Project Overview**: A brief introduction to CaseCrafted and the purpose of the repository.
+- **Installation**: Step-by-step instructions for cloning the repository, setting it up locally, and running the project.
+- **Usage**: Instructions on how to manage the product images and the dynamic product loading functionality.
+- **Folder Structure**: A breakdown of the project's files and folders to help future contributors or users navigate the codebase.
+- **Technologies Used**: A section listing the core tools used to build the project.
+- **Contributing**: Guidelines for contributing to the project through GitHub’s fork, branch, and pull request workflow.
+
+Let me know if you'd like to add or modify any sections!
