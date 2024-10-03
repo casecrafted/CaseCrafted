@@ -30,12 +30,11 @@ header {
     align-items: center;
     padding: 10px 50px;
 }
-
-/* Logo Styling */
 .logo img {
-    max-width: 120px;
-    height: auto;
+    max-width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
 }
+
 
 /* Navigation Styling */
 nav ul {
