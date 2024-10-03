@@ -395,4 +395,11 @@ hr {
         max-width: 80px; /* Smaller logo size for mobile */
     }
 }
+/* Cart Count Display */
+.cart {
+    font-size: 1em;
+    color: #f15a29;
+    margin-left: 20px;
+}
+
 
