@@ -31,7 +31,7 @@ header {
     padding: 10px 50px;
 }
 .logo img {
-    max-width: 300px; /* Adjust as needed */
+    max-width: 200px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
