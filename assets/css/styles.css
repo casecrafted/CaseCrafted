@@ -177,12 +177,6 @@ button:hover, .btn:hover {
     color: #222;
 }
 
-.product-card p {
-    margin: 15px;
-    font-size: 1em;
-    color: #555;
-}
-
 .product-card .price {
     margin: 15px;
     font-size: 1.2em;
