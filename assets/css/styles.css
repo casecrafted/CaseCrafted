@@ -472,6 +472,56 @@ a {
 a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+/* Cart Messages Styling */
+.cart-message {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
 
+.cart-message.success {
+    background-color: #f15a29; /* Orange background for success messages */
+}
+
+.cart-message.info {
+    background-color: #555; /* Dark grey background for info messages */
+}
+
+/* Cart Container Styling */
+.cart-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 1000;
+    max-width: 300px;
+    overflow: auto;
+    max-height: 400px; /* To prevent overflow */
+}
+
+/* Individual Cart Product Styling */
+.cart-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+/* Remove Button Styling */
+.remove-btn {
+    background-color: #f15a29;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #333;
+}
 
 
