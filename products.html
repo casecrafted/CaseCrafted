@@ -5,18 +5,19 @@ title: Products
 
 <header>
     <div class="logo">
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="CaseCrafted Logo">
+        <!-- Ensure the logo path is correct and accessible -->
+        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="CaseCrafted Logo">
     </div>
     <nav>
         <ul>
-        <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/products.html' | relative_url }}">Products</a></li>
-        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
-        <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
-    </ul>
-    <div class="cart">
-        <span>Cart: <span id="cart-count">0</span></span>
-    </div>
+            <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+            <li><a href="{{ site.baseurl }}/products.html">Products</a></li>
+            <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+            <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+        </ul>
+        <div class="cart">
+            <span>Cart: <span id="cart-count">0</span></span>
+        </div>
     </nav>
 </header>
 
@@ -29,13 +30,12 @@ title: Products
             <div class="product-card">
                 <img src="{{ image.path | relative_url }}" alt="{{ image.basename | capitalize }} Image">
                 <h3>{{ image.basename | capitalize }}</h3>
-                <p class="price">$29.99</p>
+                <p class="price">{{ site.custom_variables.default_price }}</p>
                 <div class="star-rating">
-                    <span class="star" style="color: orange;">★</span>
-                    <span class="star" style="color: orange;">★</span>
-                    <span class="star" style="color: orange;">★</span>
-                    <span class="star" style="color: orange;">★</span>
-                    <span class="star" style="color: orange;">★</span>
+                    <!-- Dynamic star rating using custom variable colors -->
+                    {% for star in (1..5) %}
+                    <span class="star" style="color: {{ site.custom_variables.primary_colors[0] }};">★</span>
+                    {% endfor %}
                 </div>
                 <!-- Add to Cart Button -->
                 <button class="btn" onclick="addToCart('{{ image.basename | capitalize }}')">Add to Cart</button>
@@ -45,4 +45,5 @@ title: Products
     </div>
 </main>
 
-<script src="{{ '/assets/js/cart.js' | relative_url }}"></script>
+<!-- Include the cart JavaScript -->
+<script src="{{ site.baseurl }}/assets/js/cart.js"></script>
