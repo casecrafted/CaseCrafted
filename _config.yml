@@ -2,7 +2,7 @@
 title: CaseCrafted
 description: "Showcase stylish and functional phone cases designed to reflect individuality."
 url: "https://casecrafted.github.io/CaseCrafted" # Update this to your GitHub Pages URL.
-baseurl: "" # Adjust if deploying to a subdirectory
+baseurl: "/CaseCrafted" # Adjust if deploying to a subdirectory
 author: "Mohamed Besey"
 
 # Build settings
