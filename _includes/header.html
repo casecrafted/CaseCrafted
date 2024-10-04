@@ -1,14 +1,25 @@
-<header>
-    <div class="logo">
-        <!-- Ensure the logo path and case sensitivity is correct -->
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="CaseCrafted Logo">
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="CaseCrafted Logo">
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+                <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+                <li><a href="{{ site.baseurl }}/products.html">Products</a></li>
+                <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <ul>
+                <li><a href="https://twitter.com/CaseCrafted" target="_blank">Twitter</a></li>
+                <li><a href="https://facebook.com/CaseCrafted" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com/CaseCrafted" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
-            <li><a href="{{ '/products.html' | relative_url }}">Products</a></li>
-            <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <div class="footer-bottom">
+        <p>&copy; 2024 CaseCrafted. All Rights Reserved.</p>
+    </div>
+</footer>
